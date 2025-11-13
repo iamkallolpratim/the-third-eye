@@ -28,7 +28,7 @@ if "start_times" not in st.session_state:
 
 # === CONFIG ===
 USE_GEMINI = True
-GEMINI_API_KEY = "AIzaSyBANef6_oJ4nbzHy9lSHZujHaacGzCI974"
+GEMINI_API_KEY = "GEMINI_API_KEY"
 genai.configure(api_key=GEMINI_API_KEY) if USE_GEMINI else None
 gemini = genai.GenerativeModel("gemini-2.0-flash") if USE_GEMINI else None
 
